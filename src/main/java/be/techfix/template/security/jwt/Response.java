@@ -2,16 +2,16 @@ package be.techfix.template.security.jwt;
 
 import java.io.Serializable;
 
-public class JwtResponse implements Serializable {
+public class Response implements Serializable {
 
     private static final long serialVersionUID = -8091879091924046844L;
-    private final String jwttoken;
+    private final String jwtToken;
 
-    public JwtResponse(String jwttoken) {
-        this.jwttoken = jwttoken;
+    public Response(String token) {
+        this.jwtToken = token;
     }
 
     public String getToken() {
-        return this.jwttoken;
+        return this.jwtToken;
     }
 }

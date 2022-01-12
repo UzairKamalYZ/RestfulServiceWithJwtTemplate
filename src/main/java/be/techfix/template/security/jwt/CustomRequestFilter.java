@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import be.techfix.template.security.service.CustomJwtUserDetailedService;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,10 +19,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 @Component
-public class JwtRequestFilter extends OncePerRequestFilter {
+public class CustomRequestFilter extends OncePerRequestFilter {
 
     @Autowired
-    private JwtUserDetailedService jwtUserDetailsService;
+    private CustomJwtUserDetailedService jwtUserDetailsService;
 
     @Autowired
     private JWTUtility jwtTokenUtil;

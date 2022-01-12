@@ -1,10 +1,7 @@
-package be.techfix.template.rest;
+package be.techfix.template.security.jwt;
 
 
-import be.techfix.template.security.jwt.JWTUtility;
-import be.techfix.template.security.jwt.JwtRequest;
-import be.techfix.template.security.jwt.JwtResponse;
-import be.techfix.template.security.jwt.JwtUserDetailedService;
+import be.techfix.template.security.service.CustomJwtUserDetailedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-public class JwtAuthenticationController {
+public class CustomAuthenticationController {
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -25,10 +22,10 @@ public class JwtAuthenticationController {
     private JWTUtility jwtTokenUtil;
 
     @Autowired
-    private JwtUserDetailedService userDetailsService;
+    private CustomJwtUserDetailedService userDetailsService;
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
+    public ResponseEntity<?> createAuthenticationToken(@RequestBody Request authenticationRequest) throws Exception {
 
         authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 
@@ -37,7 +34,7 @@ public class JwtAuthenticationController {
 
         final String token = jwtTokenUtil.generateToken(userDetails);
 
-        return ResponseEntity.ok(new JwtResponse(token));
+        return ResponseEntity.ok(new Response(token));
     }
 
     private void authenticate(String username, String password) throws Exception {

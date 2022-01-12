@@ -1,4 +1,4 @@
-package be.techfix.template.security.jwt;
+package be.techfix.template.security.service;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JwtUserDetailedService implements UserDetailsService {
+public class CustomJwtUserDetailedService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
