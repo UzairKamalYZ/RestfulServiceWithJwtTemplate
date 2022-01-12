@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 ```
 
-####Response
+Response: 
 ```json
 
 {
@@ -32,7 +32,7 @@ Now you can call the rest endpoints with above token
 GET http://localhost:8080/hello?user="uzair"
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY0MjAxNjg1MCwiaWF0IjoxNjQxOTk4ODUwfQ.EgcTNluW4s1nCix0UszltOxkNktp-bM7q6qqi4SzhIblUp9pnAc5WZhy6CbyWlWm4RKBF1skBcV9-m9gkteEWQ
 ```
-####Response 
+ Response : 
 ```json
 hello  "uzair"
 ```
