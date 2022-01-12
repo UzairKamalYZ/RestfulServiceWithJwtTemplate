@@ -1,8 +1,8 @@
-package be.techfix.template.security.config;
+package be.techfix.learning.security.config;
 
 
-import be.techfix.template.security.jwt.CustomAuthenticationEntryPoint;
-import be.techfix.template.security.jwt.CustomRequestFilter;
+import be.techfix.learning.security.jwt.CustomAuthenticationEntryPoint;
+import be.techfix.learning.security.jwt.CustomRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

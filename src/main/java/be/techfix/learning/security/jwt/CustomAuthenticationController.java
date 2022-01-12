@@ -1,7 +1,7 @@
-package be.techfix.template.security.jwt;
+package be.techfix.learning.security.jwt;
 
 
-import be.techfix.template.security.service.CustomJwtUserDetailedService;
+import be.techfix.learning.security.service.CustomJwtUserDetailedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

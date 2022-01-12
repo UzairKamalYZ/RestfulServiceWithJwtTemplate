@@ -1,4 +1,4 @@
-package be.techfix.template.rest;
+package be.techfix.learning.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,4 +1,4 @@
-package be.techfix.template.security.jwt;
+package be.techfix.learning.security.jwt;
 
 import java.io.IOException;
 import java.io.Serializable;

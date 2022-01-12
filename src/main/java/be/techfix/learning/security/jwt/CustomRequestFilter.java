@@ -1,4 +1,4 @@
-package be.techfix.template.security.jwt;
+package be.techfix.learning.security.jwt;
 
 
 import java.io.IOException;
@@ -8,7 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import be.techfix.template.security.service.CustomJwtUserDetailedService;
+import be.techfix.learning.security.service.CustomJwtUserDetailedService;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

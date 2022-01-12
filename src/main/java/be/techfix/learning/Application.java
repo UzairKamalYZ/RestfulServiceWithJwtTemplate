@@ -1,4 +1,4 @@
-package be.techfix.template;
+package be.techfix.learning;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

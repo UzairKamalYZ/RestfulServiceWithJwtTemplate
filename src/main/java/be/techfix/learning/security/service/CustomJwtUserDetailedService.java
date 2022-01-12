@@ -1,4 +1,4 @@
-package be.techfix.template.security.service;
+package be.techfix.learning.security.service;
 
 import java.util.ArrayList;
 
